@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Meet-Up Event Planner</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHx-9q1_dHCoJwLJS_sYEvwLyjneWt-a4&libraries=places"></script>
+</head>
+
+<body>
+    <div class="main">
+        <nav class="navbar navbar-default fixed-nav-bar" style="background-color:#337ab7; width: 100%;">
+
+            <div class="navbar-header">
+                <a class="navbar-brand" style="margin-top:-15px;"><font color="black" style="font-weight:bold;">Meet-Up Event Planner</font></a>
+            </div>
+            <div id="menu" class=" collapse navbar-collapse" style="margin-left:50%;">
+                <ul class="menu-items nav navbar-nav" style="text-align:center;">
+                    <li><a id="linkEvents" href="events.html"><font color="white">Home</font></a>
+                    </li>
+                    <li><a id="linkCreate" href="create_event.html"><font color="white">Create Event</font></a>
+                    </li>
+                    <li><a href="login.html"><font color="white">Logout</font></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <form class="form-horizontal">
+                <legend class="lead">Create Event</legend>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="eventName">Event Name: *</label>
+                    <div class="col-md-4">
+                        <input id="eventName" name="eventName" type="text" placeholder="Event Name." class="form-control input-md" required autofocus="autofocus">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="eventType">Event Type: *</label>
+                    <div class="col-md-4">
+                        <input list="events" class="form-control input-md" name="eventType" id="eventType" placeholder="Event Type." required>
+                        <datalist id="events">
+                            <option value="Birthday party"></option>
+                            <option value="Conference talk"></option>
+                            <option value="Wedding"></option>
+                            <option value="Meeting"></option>
+                            <option value="Graduation"></option>
+                            <option value="Concert"></option>
+                            <option value="Hackathon"></option>
+                            <option value="Video game tournament"></option>
+                            <option value="Engagment"></option>
+                        </datalist>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="eventHost">Event Host Name: *</label>
+                    <div class="col-md-4">
+                        <input id="eventHost" name="eventHost" placeholder="Host Name." class="form-control input-md" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="eventDateStart">Start Date/Time: *</label>
+                    <div class="col-md-4">
+                        <span id="errEventStartDate" class="error"></span>
+                        <input id="eventDateStart" name="eventDateStart" type="datetime-local" class="form-control input-md" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="eventDateEnd">End Date/Time: *</label>
+                    <div class="col-md-4">
+                        <input id="eventDateEnd" name="eventDateEnd" type="datetime-local" class="form-control input-md" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="eventLocation">Event Location: *</label>
+                    <div class="col-md-4">
+                        <input id="eventLocation" name="eventLocation" class="form-control" type="text" placeholder="Event Location." required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="eventGuests">List of Guests: *</label>
+                    <div class="col-md-4">
+                        <textarea id="eventGuests" name="eventGuests" class="form-control" type="text" placeholder="Enter guest list...each guest in a line" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="eventMessage">Message to guests: <small>(optional)</small>
+                    </label>
+                    <div class="col-md-4">
+                        <textarea id="eventMessage" name="eventMessage" class="form-control" type="text" placeholder="Optional message to your guests..."></textarea>
+                    </div>
+                </div>
+
+                <br />
+                <p style="color:red; text-align:center;" id="message"></p>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="createButton"></label>
+                    <div class="col-md-4">
+                        <button id="createButton" name="createButton" class="btn btn-lg btn-primary btn-block" type="submit" value="submit">Create Event</button>
+                    </div>
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+
+
+    <footer class="navbar-default nav-bar" style="height: 60px; background-color:#337ab7;bottom: 0;width: 100%;">
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="nav nav-pills">
+                    <li class="active"><a><h5>&copy; 2015 Ahmed Elsayed</h4></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="scripts/createEvent.js"></script>
+</body>
+
+</html>
