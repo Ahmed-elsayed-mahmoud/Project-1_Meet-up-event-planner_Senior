@@ -34,8 +34,9 @@ $ npm install --global gulp
 
 ## Running Tests
 
-<img width="80%" src="http://ahmed-elsayed.890m.com/assets/images/works/movieApp.png" />
-
+<img width="50%" src="https://github.com/Ahmed-elsayed-mahmoud/Project-1_Meet-up-event-planner_Senior/tree/master/shots/1.png" />
+<img width="50%" src="https://github.com/Ahmed-elsayed-mahmoud/Project-1_Meet-up-event-planner_Senior/tree/master/shots/2.png" />
+<img width="80%" src="https://github.com/Ahmed-elsayed-mahmoud/Project-1_Meet-up-event-planner_Senior/tree/master/shots/3.png" />
 
 ## How to run the app
 
