@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "name": "Meet-Up Event Planner",
+  "launch_path": "/login.html",
+  "description": "A web application to allow users to Sign in, Sign up and Create events.",
+  "icons": {
+    "341x327": "/images/favicon.ico"
+  },
+  "developer": {
+    "name": "Justin Varghese John",
+    "url": "https://github.com/Ahmed-elsayed-mahmoud"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "Meet-Up Event Planner",
+      "description": "A web application to allow users to Sign in, Sign up and Create events."
+    }
+  }
+}
