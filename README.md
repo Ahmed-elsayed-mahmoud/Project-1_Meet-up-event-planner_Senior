@@ -1,5 +1,4 @@
 # Meet-up Event Planner
-[https://meet-up-event-planner.firebaseapp.com](https://meet-up-event-planner.firebaseapp.com)
 
 ## Overview
 
