@@ -142,9 +142,7 @@
             }, function(error, authData) {
                 if (error) {
                     validationMessage.innerHTML = error;
-                    console.log('Create Event Failed!', error);
                 } else {
-                    console.log('create successful:', authData);
                     window.location.href = 'events.html?' + emailIn;
                 }
             });

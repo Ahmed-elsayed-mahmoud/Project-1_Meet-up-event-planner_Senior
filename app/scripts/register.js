@@ -134,10 +134,6 @@
         }
         let inputIssues = issuesTrackerObj.getIssues();
 
-
-        /*
-        Let input.setCustomValidity() do its magic :)
-         */
         passwordInput.setCustomValidity(inputIssues);
 
         if (inputIssues.length === 0) {
@@ -147,7 +143,6 @@
             }, function(error, userData) {
                 if (error) {
                     validationMessage.innerHTML = error;
-                    console.log('Error creating user:', error);
                 } else {
                     window.setTimeout(function() {
                         window.location = 'create_event.html?' + emailInput.value;

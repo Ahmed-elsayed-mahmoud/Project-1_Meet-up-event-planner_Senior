@@ -100,9 +100,7 @@
             }, function(error, authData) {
                 if (error) {
                     validationMessage.innerHTML = error;
-                    console.log('Login Failed!', error);
                 } else {
-                    console.log('Authenticated successfully with payload:', authData);
                     window.location.href = 'create_event.html?' + emailInput.value;
                 }
             });
