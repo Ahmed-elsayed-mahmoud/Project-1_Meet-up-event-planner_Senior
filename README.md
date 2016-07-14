@@ -5,6 +5,13 @@
 
 A responsive web application that allows the user to establish a meet-up event.
 
+# Features
+
+* Sign In.
+* Sign Up.
+* Create Events.
+* Display Events
+
 ## Prerequisites
 
 ### [Node.js](https://nodejs.org)
@@ -25,15 +32,21 @@ $ npm install --global gulp
 
 *This will install Gulp globally. Depending on your user account, you may need to [configure your system](https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md) to install packages globally without administrative privileges.*
 
+## Running Tests
 
-### Run app
+<img width="80%" src="http://ahmed-elsayed.890m.com/assets/images/works/movieApp.png" />
+
+
+## How to run the app
+
   1. clone on local machine
   2. run 'npm install'
   3. run 'gulp clean'
   4. run 'gulp build'
   
 
-Resources which I helped me to build thia app:
+## Libraries Used 
+
   1. https://www.firebase.com/docs/web/libraries/angular/quickstart.html
   2. https://docs.angularjs.org/guide/forms
   3. https://egghead.io/
