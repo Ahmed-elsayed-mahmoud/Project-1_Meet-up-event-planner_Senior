@@ -48,7 +48,7 @@ $ npm install --global gulp
 ## Libraries Used 
 
   1. https://www.firebase.com/docs/web/libraries/angular/quickstart.html
-  2. https://docs.angularjs.org/guide/forms
+  2. https://docs.angularjs.org/guide/forms/
   3. https://egghead.io/
 
 
