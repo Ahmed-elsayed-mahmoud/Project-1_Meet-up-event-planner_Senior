@@ -9,7 +9,7 @@ A responsive web application that allows the user to establish a meet-up event.
 * Sign In.
 * Sign Up.
 * Create Events.
-* Display Events
+* Display Events.
 
 ## Prerequisites
 
