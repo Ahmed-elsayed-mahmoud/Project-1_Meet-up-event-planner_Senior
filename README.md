@@ -42,7 +42,8 @@ $ npm install --global gulp
   1. clone on local machine
   2. run 'npm install'
   3. run 'gulp clean'
-  4. run 'gulp build'
+  4. Serve up a local version of the site with gulp. Watch for changes & automatically refresh across devices by running
+'gulp serve'
   
 
 ## Libraries Used 
